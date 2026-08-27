@@ -19,4 +19,3 @@ const novaPessoa = {
     nome: "Pedro",
 }
     pessoa = novaPessoa;
-]
