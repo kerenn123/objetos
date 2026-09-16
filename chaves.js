@@ -14,11 +14,10 @@ complemento: "ap 934",
 }
 ];
 
-for (let chave in cliente){
+const chavesDoObjeto = Object.keys(cliente);
+console.log(chavesDoObjeto);
 
-    let tipo = typeof cliente[chave];
-    if (tipo !== "object" && tipo !== "function"){
-      console.log(`A chave ${chave} tem o valor ${cliente[chave]}`);
-     }  
-     }
-     
+if (!chavesDoObjeto.includes("enderecos")){
+    console.error("Erro. É necessario ter um endereço cadastrado");
+}
+
